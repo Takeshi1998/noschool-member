@@ -1,0 +1,30 @@
+{
+  "name": "noschool-member",
+  "version": "1.0.0",
+  "description": "NoSchoolの情報を返す(学習目的)",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc && chmod 755 build/index.js"
+  },
+  "bin": {
+    "noschool-member": "./build/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.8.0",
+    "node-html-parser": "^7.0.1",
+    "puppeteer": "^24.6.0",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.2"
+  },
+  "files": [
+    "build"
+  ]
+}
