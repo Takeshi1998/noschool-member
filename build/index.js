@@ -7,7 +7,7 @@ const server = new McpServer({
     name: "noschool-member",
     version: "1.0.0",
 });
-server.tool("get_staff_members", "スタッフメンバーを取得する", {
+server.tool("get_employees", "従業員を取得する", {
     num: z.number().describe("取得する人数").optional().default(10),
 }, async ({ num }) => {
     // Puppeteerを起動してページのHTMLを取得
